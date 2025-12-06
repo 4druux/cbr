@@ -1,0 +1,17 @@
+{
+  "name": "cbr-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "dev": "browser-sync start --proxy localhost/cbr-v3 --files \"**/*.php, **/*.css, **/*.js\" --no-notify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.24.0",
+    "browser-sync": "^3.0.4",
+    "prettier": "^3.6.2"
+  }
+}

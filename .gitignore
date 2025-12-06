@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Dependencies cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# BrowserSync cache
+.ds_store
+bs-config.js
+
+# PHP related temporary files
+*.log
+*.cache
+*.tmp
+*.swp
+*.swo
+
+# Composer (kalau tidak pakai, tetap aman dicantumkan)
+vendor/
+composer.lock
+
+# Environment files
+.env
+.env*
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+
+# Vscode folders
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.old
+
+# Prettier & config temp
+.prettier-cache/
