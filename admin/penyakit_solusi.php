@@ -42,11 +42,11 @@ function konfirmasi(kd_penyakit) {
                 <form name="form3" method="post" onSubmit="return validasi(this);" action="simpanpenyakit.php">
                     <div class="form-group">
                         <label>Kode Status Gizi</label>
-                        <input type="text" class="form-control" placeholder="Kode Penyakit" id="kd_penyakit" name="kd_penyakit">
+                        <input type="text" class="form-control" placeholder="Kode Status Gizi" id="kd_penyakit" name="kd_penyakit">
                     </div>
                     <div class="form-group">
                         <label> Jenis Status Gizi </label>
-                        <input type="text" class="form-control" placeholder="Nama Penyakit" id="nama_penyakit" name="nama_penyakit">
+                        <input type="text" class="form-control" placeholder="Jenis Status Gizi" id="nama_penyakit" name="nama_penyakit">
                     </div>
                     <div class="form-group">
                         <label>Definisi</label>
@@ -116,5 +116,6 @@ function konfirmasi(kd_penyakit) {
                 ?>
                 </tbody>
             </table>
-        </div> </div>
+        </div> 
+    </div>
 </div>
