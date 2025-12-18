@@ -1,0 +1,19 @@
+-- 1. Tambahkan kolom pengertian
+ALTER TABLE gejala ADD COLUMN pengertian TEXT;
+
+-- 2. Isi data pengertian sesuai PDF
+UPDATE gejala SET pengertian = 'Berat badan balita tidak bertambah atau menurun selama tiga bulan.' WHERE kd_gejala = 'G001';
+UPDATE gejala SET pengertian = 'Kondisi tubuh balita tampak sangat kurus dengan tulang terlihat.' WHERE kd_gejala = 'G002';
+UPDATE gejala SET pengertian = 'Ukuran lingkar lengan atas balita kurang dari 11,5 cm' WHERE kd_gejala = 'G003';
+UPDATE gejala SET pengertian = 'Terjadi pembengkakan pada kaki atau wajah akibat penumpukan cairan yang dapat disebabkan oleh gangguan gizi atau pencernaan.' WHERE kd_gejala = 'G004';
+UPDATE gejala SET pengertian = 'Perut balita tampak membesar atau menonjol.' WHERE kd_gejala = 'G005';
+UPDATE gejala SET pengertian = 'Kulit balita tampak kering atau bersisik.' WHERE kd_gejala = 'G006';
+UPDATE gejala SET pengertian = 'Rambut balita mudah rontok dan terlihat kusam.' WHERE kd_gejala = 'G007';
+UPDATE gejala SET pengertian = 'Balita terlihat lemas dan kurang aktif bermain.' WHERE kd_gejala = 'G008';
+UPDATE gejala SET pengertian = 'Balita sering rewel atau menangis.' WHERE kd_gejala = 'G009';
+UPDATE gejala SET pengertian = 'Nafsu makan balita menurun secara signifikan.' WHERE kd_gejala = 'G010';
+UPDATE gejala SET pengertian = 'Balita makan berlebihan melebihi kebutuhan normal.' WHERE kd_gejala = 'G011';
+UPDATE gejala SET pengertian = 'Balita sering mengalami diare atau ISPA.' WHERE kd_gejala = 'G012';
+UPDATE gejala SET pengertian = 'Pakaian balita menjadi longgar akibat penurunan berat badan.' WHERE kd_gejala = 'G013';
+UPDATE gejala SET pengertian = 'Balita makan kurang dari tiga kali sehari.' WHERE kd_gejala = 'G014';
+UPDATE gejala SET pengertian = 'Pola makan balita kurang bervariasi.' WHERE kd_gejala = 'G015';

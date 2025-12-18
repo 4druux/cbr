@@ -186,30 +186,31 @@ INSERT INTO `analisa_hasil` (`id`, `nama`, `kelamin`, `umur`, `alamat`, `kd_peny
 
 CREATE TABLE `gejala` (
   `kd_gejala` char(4) NOT NULL,
-  `gejala` varchar(100) NOT NULL
+  `gejala` varchar(100) NOT NULL,
+  `pengertian` text DEFAULT NULL,
+  PRIMARY KEY (`kd_gejala`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data untuk tabel `gejala`
 --
 
-INSERT INTO `gejala` (`kd_gejala`, `gejala`) VALUES
-('G001', 'Berat badan tidak naik/turun (dalam jangka waktu 3 bulan)'),
-('G002', 'Badan sangat kurus (tulang iga/mata cekung terlihat)'),
-('G003', 'Lingkar lengan atas (LiLA) < 11,5 cm'),
-('G004', 'Ada bengkak di kaki/wajah (edema)'),
-('G005', 'Perut buncit'),
-('G006', 'Kulit kering/bersisik'),
-('G007', 'Rambut rontok/kusam'),
-('G008', 'Lemas/tidak aktif bermain'),
-('G009', 'Sering rewel/menangis'),
-('G010', 'Nafsu makan sangat kurang'),
-('G011', 'Makan berlebihan/tidak bisa berhenti'),
-('G012', 'Sering sakit (diare/ISPA) dalam 1 bulan'),
-('G013', 'Pakaian longgar (tidak lagi pas)'),
-('G014', 'Frekuensi makan < 3x/hari '),
-('G015', 'Hanya makan nasi/tekstur cair (variasi minim)');
-
+INSERT INTO `gejala` (`kd_gejala`, `gejala`, `pengertian`) VALUES
+('G001', 'Berat badan tidak naik/turun (dalam jangka waktu 3 bulan)', 'Berat badan balita tidak bertambah atau menurun selama tiga bulan.'),
+('G002', 'Badan sangat kurus (tulang iga/mata cekung terlihat)', 'Kondisi tubuh balita tampak sangat kurus dengan tulang terlihat.'),
+('G003', 'Lingkar lengan atas (LiLA) < 11,5 cm', 'Ukuran lingkar lengan atas balita kurang dari 11,5 cm'),
+('G004', 'Ada bengkak di kaki/wajah (edema)', 'Terjadi pembengkakan pada kaki atau wajah akibat penumpukan cairan yang dapat disebabkan oleh gangguan gizi atau pencernaan.'),
+('G005', 'Perut buncit', 'Perut balita tampak membesar atau menonjol.'),
+('G006', 'Kulit kering/bersisik', 'Kulit balita tampak kering atau bersisik.'),
+('G007', 'Rambut rontok/kusam', 'Rambut balita mudah rontok dan terlihat kusam.'),
+('G008', 'Lemas/tidak aktif bermain', 'Balita terlihat lemas dan kurang aktif bermain.'),
+('G009', 'Sering rewel/menangis', 'Balita sering rewel atau menangis.'),
+('G010', 'Nafsu makan sangat kurang', 'Nafsu makan balita menurun secara signifikan.'),
+('G011', 'Makan berlebihan/tidak bisa berhenti', 'Balita makan berlebihan melebihi kebutuhan normal.'),
+('G012', 'Sering sakit (diare/ISPA) dalam 1 bulan', 'Balita sering mengalami diare atau ISPA.'),
+('G013', 'Pakaian longgar (tidak lagi pas)', 'Pakaian balita menjadi longgar akibat penurunan berat badan.'),
+('G014', 'Frekuensi makan < 3x/hari ', 'Balita makan kurang dari tiga kali sehari.'),
+('G015', 'Hanya makan nasi/tekstur cair (variasi minim)', 'Pola makan balita kurang bervariasi.');
 -- --------------------------------------------------------
 
 --
